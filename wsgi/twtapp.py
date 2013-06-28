@@ -24,7 +24,7 @@ bottle.TEMPLATE_PATH.append(os.path.join(os.environ['OPENSHIFT_REPO_DIR'],
 
 @bottle.route('/')
 def index():
-        m={"MCMP_MBR_USI_ID" : "", "MCMP_SBS_ID" : "", "EL" : ""}
+        m={"MCMP_MBR_USI_ID" : "1", "MCMP_SBS_ID" : "2", "EL" : "3"}
         return bottle.template('query',mynames = m)
 
 @bottle.route('/DEBUG/cwd')
